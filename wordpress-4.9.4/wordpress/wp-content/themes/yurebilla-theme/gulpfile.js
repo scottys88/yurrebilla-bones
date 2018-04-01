@@ -6,7 +6,7 @@ var sass        = require('gulp-sass');
 gulp.task('browser-sync', function() {
 
     browserSync.init({
-      proxy: "http://localhost:3000/Yurrebilla-bones/wordpress-4.9.4/wordpress/",
+      proxy: "http://localhost:8080/Yurrebilla-bones/wordpress-4.9.4/",
       notify: true,
       injectChanges: true,
     });
@@ -25,11 +25,11 @@ gulp.task('browser-sync', function() {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    gulp.watch('*.scss', ['sass']);
+    gulp.watch('library/scss/**/*.scss', ['sass']);
 
-    return gulp.src("*.scss")     // Gets all files ending with .scss
+    return gulp.src("library/scss/**/*.scss")     // Gets all files ending with .scss
         .pipe(sass())
-        .pipe(gulp.dest("./library/css/"))    // save into same folder as gulpfile.js
+        .pipe(gulp.dest("./"))    // save into same folder as gulpfile.js
 });
 
 /* Watch Files */

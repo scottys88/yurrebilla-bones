@@ -41,9 +41,6 @@ the whole project.
 // the grid
 @import "partials/grid";
 
-body {
-	color: purple;
-}
 
 /*********************
 IMPORTING MODULES
@@ -119,6 +116,8 @@ This is for the larger monitors and possibly full screen viewers.
 
 	// styles in 1240up.scss
 	@import "breakpoints/1240up";
+	
+
 
 	
 	

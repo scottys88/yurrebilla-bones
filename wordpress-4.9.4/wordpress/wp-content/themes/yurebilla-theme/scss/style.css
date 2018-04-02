@@ -1336,7 +1336,9 @@ HEADER STYLES
   background-color: #323944; }
 
 #logo {
-  margin: 0.75em 0; }
+  margin: 0.75em 0; 
+  text-align: center;
+}
   #logo a {
     color: #fff; }
 

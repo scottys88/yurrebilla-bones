@@ -73,6 +73,41 @@ NAVIGATION STYLES
 		} /* end .menu ul */
 	} /* end .menu */
 
+
+/*********************
+SOCIAL AND LOGO IN HEADER
+*********************/
+
+
+	#logo {
+		text-align: center;
+	}
+
+.social ul {
+	list-style: none;
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	
+	li {
+		display: block;
+		float: left;
+		margin-left: 15px;
+	}
+}
+
+.full-width-image {
+	height: 75vh;
+	width: auto;
+}
+
+#content {
+	margin-top: 0px;
+}
+
+
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/

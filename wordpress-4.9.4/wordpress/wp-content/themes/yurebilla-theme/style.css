@@ -810,9 +810,6 @@ them however you see fit.
     padding-right: 0.75em;
     width: 8.33%; } }
 
-body {
-  color: purple; }
-
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -1279,12 +1276,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: brown;
+  color: pink;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #802121; }
+    color: #ff92a5; }
   a:link, a:visited:link {
     /*
 		this highlights links on iPhones/iPads.
@@ -1333,7 +1330,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
+  background-color: #911F24; }
 
 #logo {
   margin: 0.75em 0; }
@@ -1353,10 +1350,16 @@ and more scalable.
 .nav {
   border-bottom: 0;
   margin: 0;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  width: 100%;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
+    display: inline-block;
+    text-align: center;
     /*
 		so you really have to rethink your dropdowns for mobile.
 		you don't want to have it expand too much because the
@@ -1774,6 +1777,26 @@ NAVIGATION STYLES
 					*/ }
   /* end .menu */
   /*********************
+SOCIAL AND LOGO IN HEADER
+*********************/
+  #logo {
+    text-align: center; }
+  .social ul {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 5%; }
+    .social ul li {
+      display: block;
+      float: left;
+      margin-left: 15px; }
+  .full-width-image {
+    height: 75vh;
+    width: auto; }
+  #content {
+    margin-top: 0px; }
+  /*********************
 POSTS & CONTENT STYLES
 *********************/
   /* entry content */
@@ -1845,7 +1868,7 @@ NAVIGATION STYLES
       background: #323944;
       margin-top: 0; }
     .nav li {
-      float: left;
+      /*float: left;*/
       position: relative;
       /*
 		plan your menus and drop-downs wisely.

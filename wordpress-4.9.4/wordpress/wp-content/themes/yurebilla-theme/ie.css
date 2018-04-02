@@ -205,6 +205,30 @@ NAVIGATION STYLES
 
 /* end .menu */
 /*********************
+SOCIAL AND LOGO IN HEADER
+*********************/
+#logo {
+  text-align: center; }
+
+.social ul {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 5%; }
+  .social ul li {
+    display: block;
+    float: left;
+    margin-left: 15px; }
+
+.full-width-image {
+  height: 75vh;
+  width: auto; }
+
+#content {
+  margin-top: 0px; }
+
+/*********************
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
@@ -270,7 +294,7 @@ NAVIGATION STYLES
     background: #323944;
     margin-top: 0; }
   .nav li {
-    float: left;
+    /*float: left;*/
     position: relative;
     /*
 		plan your menus and drop-downs wisely.
